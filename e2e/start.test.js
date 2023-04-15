@@ -14,7 +14,7 @@ describe("Page start", () => {
     });
 
     page = await browser.newPage();
-  });
+  }, 40000);
 
   // eslint-disable-next-line jest/expect-expect
   test("start", async () => {
@@ -22,9 +22,9 @@ describe("Page start", () => {
     await page.goto("http://localhost:9000");
 
     await page.waitForSelector("body");
-  }, 40000);
+  });
 
   afterEach(async () => {
     await browser.close();
-  }, 10000);
+  }, 40000);
 });

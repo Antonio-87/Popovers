@@ -13,7 +13,7 @@ describe("Widget", () => {
     });
 
     page = await browser.newPage();
-  });
+  }, 40000);
 
   // eslint-disable-next-line jest/expect-expect
   test("Button should render on page start", async () => {
@@ -40,5 +40,5 @@ describe("Widget", () => {
 
   afterAll(async () => {
     await browser.close();
-  }, 10000);
+  });
 });
