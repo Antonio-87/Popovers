@@ -26,5 +26,5 @@ describe("Page start", () => {
 
   afterEach(async () => {
     await browser.close();
-  });
+  }, 10000);
 });

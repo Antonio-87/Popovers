@@ -40,5 +40,5 @@ describe("Widget", () => {
 
   afterAll(async () => {
     await browser.close();
-  });
+  }, 10000);
 });
