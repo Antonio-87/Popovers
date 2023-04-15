@@ -36,7 +36,9 @@ jobs:
         run: npm run lint
 
       - name: e2e
-        run: npm run e2e
+        run: |
+          npm run start
+          npm run e2e
 
       - name: Build
         run: npm run build
