@@ -1,6 +1,6 @@
 import puppeteer from "puppeteer";
 
-jest.setTimeout(40000);
+jest.setTimeout(30000);
 
 describe("Widget", () => {
   let browser;

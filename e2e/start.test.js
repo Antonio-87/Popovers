@@ -1,6 +1,6 @@
 import puppeteer from "puppeteer";
 
-jest.setTimeout(40000);
+jest.setTimeout(30000);
 
 describe("Page start", () => {
   let browser;
@@ -21,7 +21,7 @@ describe("Page start", () => {
     await page.goto("http://localhost:9000");
 
     await page.waitForSelector("body");
-  }, 10000);
+  });
 
   afterEach(async () => {
     await browser.close();
